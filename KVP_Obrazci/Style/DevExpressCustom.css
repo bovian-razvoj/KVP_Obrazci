@@ -1,0 +1,83 @@
+﻿/*NAVBAR Left Panel*/
+.dxnbLite_iOS .dxnb-itemSelected {
+    border-radius: 20px;
+}
+
+.dxnbLite_iOS .dxnb-item {
+    border-bottom: none !important;
+}
+
+.dxnbLite_iOS .dxnb-content {
+    border-top: none !important;
+}
+
+.dxnbLite_iOS .dxnb-last .dxnb-content {
+    border-bottom: none !important;
+}
+
+.dxnb-itemHover {
+    border-radius: 20px;
+}
+
+.dxnb-item a:hover {
+    text-decoration: none;
+}
+
+.dxnbLite_iOS .dxnb-img {
+    margin-top: 0px !important;
+}
+
+/*LEFT PANEL - MENU*/
+
+#ctl00_MainMenuPanel .dxpnl-acc {
+    height: 100%;
+}
+
+#ctl00_MainMenuPanel_ASPxButton1 {
+    position: relative;
+    top: 5px;
+}
+
+.dxeProgressBarIndicator_DevEx {
+    background: none;
+}
+
+.dxeProgressBar_Moderno .dxePBMainCell {
+    padding: 0 !important;
+}
+
+a:focus {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+/*******labels font wheight********/
+.dxeBase_Moderno {
+    font-weight:600;
+}
+
+/***********dashed border around buttons**************/
+.dxbButtonSys.dxbTSys div {
+
+    border: none !important;
+}
+
+/**** Button on grid view (Spremeni, Prekliči *****/
+.dxgvStatusBar_Moderno a {
+    padding: 10px 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 5px;
+}
+
+    .dxgvStatusBar_Moderno a:hover {
+        text-decoration:none !important;
+        background-color: royalblue;
+        color:white !important;
+    }
+
+a.dxbButton_Moderno.dxbDisabled_Moderno:hover {
+    background-color: white !important;
+    color:#C3C3C3 !important;
+}

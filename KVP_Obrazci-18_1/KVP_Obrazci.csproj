@@ -1,0 +1,887 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CE368872-8EFD-488D-A48A-FBD16D6D75C2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KVP_Obrazci</RootNamespace>
+    <AssemblyName>KVP_Obrazci</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.Resources.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.1.Web.WebForms, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v18.1.Web, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v18.1.Export, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Admin.aspx" />
+    <Content Include="Admin\KVPArchive.aspx" />
+    <Content Include="CodeList\KVPType\KVPType.aspx" />
+    <Content Include="CodeList\KVPType\KVPType_popup.aspx" />
+    <Content Include="CodeList\Line\Line.aspx" />
+    <Content Include="CodeList\Line\Line_popup.aspx" />
+    <Content Include="CodeList\Location\Location_popup.aspx" />
+    <Content Include="CodeList\Location\Location.aspx" />
+    <Content Include="CodeList\Machine\Machine.aspx" />
+    <Content Include="CodeList\Machine\Machine_popup.aspx" />
+    <Content Include="CompanySettings\CompanySettingsForm.aspx" />
+    <Content Include="Department\Department.aspx" />
+    <Content Include="Department\Department_popup.aspx" />
+    <Content Include="Employees\Employees.aspx" />
+    <Content Include="Employees\EmployeesForm.aspx" />
+    <Content Include="Helpers\EmailTemplates\RejectedKVPMessage.html" />
+    <Content Include="Helpers\EmailTemplates\InfoMail.html" />
+    <Content Include="Helpers\EmailTemplates\UserCredentialMessage.html" />
+    <Content Include="Images\add.png" />
+    <Content Include="Images\addComment.png" />
+    <Content Include="Images\addCommentDisabled.png" />
+    <Content Include="Images\addCommentHover.png" />
+    <Content Include="Images\addCommentHover2.png" />
+    <Content Include="Images\addHover.png" />
+    <Content Include="Images\addPopUp.png" />
+    <Content Include="Images\admin.png" />
+    <Content Include="Images\archive.png" />
+    <Content Include="Images\authorizeKVP.png" />
+    <Content Include="Images\authorizeKVPHoover.png" />
+    <Content Include="Images\cancel.png" />
+    <Content Include="Images\cancelHover.png" />
+    <Content Include="Images\cancelPopUp.png" />
+    <Content Include="Images\codeListKVPType.png" />
+    <Content Include="Images\confirm.png" />
+    <Content Include="Images\confirmHoover.png" />
+    <Content Include="Images\conveyorBelt.png" />
+    <Content Include="Images\dashboard.png" />
+    <Content Include="Images\department_icon.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\editHover.png" />
+    <Content Include="Images\editPopup.png" />
+    <Content Include="Images\employee.png" />
+    <Content Include="Images\employeeGroup.png" />
+    <Content Include="Images\EvaluateKVP.png" />
+    <Content Include="Images\EvaluateKVP_Hover.png" />
+    <Content Include="Images\export_excel.png" />
+    <Content Include="Images\groupReport.png" />
+    <Content Include="Images\hidePass.png" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\icon-next-right.png" />
+    <Content Include="Images\icon-previous-left.png" />
+    <Content Include="Images\inspect.png" />
+    <Content Include="Images\key.png" />
+    <Content Include="Images\keyHoover.png" />
+    <Content Include="Images\kvp_report.png" />
+    <Content Include="Images\locations.png" />
+    <Content Include="Images\lock2.png" />
+    <Content Include="Images\lock2Hoover.png" />
+    <Content Include="Images\machine.png" />
+    <Content Include="Images\minus.png" />
+    <Content Include="Images\plus.png" />
+    <Content Include="Images\postPin.png" />
+    <Content Include="Images\post_note.png" />
+    <Content Include="Images\presoja.png" />
+    <Content Include="Images\presojaHoover.png" />
+    <Content Include="Images\redcard.png" />
+    <Content Include="Images\redcardHoover.png" />
+    <Content Include="Images\refresh.png" />
+    <Content Include="Images\reject.png" />
+    <Content Include="Images\rejectHoover.png" />
+    <Content Include="Images\report.png" />
+    <Content Include="Images\sendMail.png" />
+    <Content Include="Images\sendMailHover.png" />
+    <Content Include="Images\settings.png" />
+    <Content Include="Images\showPass.png" />
+    <Content Include="Images\trash.png" />
+    <Content Include="Images\trashHover.png" />
+    <Content Include="Images\trashPopUp.png" />
+    <Content Include="Images\zakljuci.png" />
+    <Content Include="Images\zakljuciHoover.png" />
+    <Content Include="KVPDocuments\FullKVPReport.aspx" />
+    <Content Include="KVPDocuments\SendInfoMail_popup.aspx" />
+    <Content Include="KVPDocuments\KVPAuditor_popup.aspx" />
+    <Content Include="KVPGroups\EmployeesKVPGroups.aspx" />
+    <Content Include="KVPGroups\Employee_popup.aspx" />
+    <Content Include="KVPGroups\KVPGroupReportForm.aspx" />
+    <Content Include="KVPGroups\KVPGroups.aspx" />
+    <Content Include="KVPGroups\KVPGroupsForm.aspx" />
+    <Content Include="Navigation\Menu.xml" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="Images\defaultPerson.png" />
+    <Content Include="Images\documentImage.png" />
+    <Content Include="Images\documentLogo.png" />
+    <Content Include="Images\pencileHover.png" />
+    <Content Include="Images\penPencile.png" />
+    <Content Include="Images\questionMark.png" />
+    <Content Include="Images\questionMarkHover.png" />
+    <Content Include="Images\removeDocument.png" />
+    <Content Include="KVPDocuments\KVPDocumentRedCardForm.aspx" />
+    <Content Include="KVPDocuments\KVPDocumentForm.aspx" />
+    <Content Include="Payouts\PayoutOverview.aspx" />
+    <Content Include="Payouts\PayoutOverviewByPeriod.aspx" />
+    <Content Include="PlaningAndRealization\PlaningAndRealizationOverview.aspx" />
+    <Content Include="Posts\News.aspx" />
+    <Content Include="Posts\NewsForm.aspx" />
+    <Content Include="Reports\ReportPreview.aspx" />
+    <Content Include="Scripts\CommonJS.js" />
+    <Content Include="Scripts\jquery.roadmap.min.js" />
+    <Content Include="Style\BootstrapCustom.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\lock.png" />
+    <Content Include="Images\lock_unlock.png" />
+    <Content Include="Images\Logo%27s\Logo_Odelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Style\Common.css" />
+    <Content Include="Style\Content.css" />
+    <Content Include="Style\DevExpressCustom.css" />
+    <Content Include="Style\jquery.roadmap.min.css" />
+    <Content Include="Style\UserControls.css" />
+    <Content Include="Credentials\ChangePassword.aspx" />
+    <Content Include="Widgets\NewsPost.ascx" />
+    <Content Include="Widgets\PopUp.ascx" />
+    <Content Include="Widgets\UploadAttachment.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="MasterPages\Main.Master" />
+    <Content Include="MasterPages\PopUp.Master" />
+    <Content Include="MasterPages\WelcomeSite.Master" />
+    <Content Include="Domain\KVPOdelo.xpo" />
+    <Content Include="Domain\KVPOdelo.xpo.diagram">
+      <DependentUpon>KVPOdelo.xpo</DependentUpon>
+    </Content>
+    <Content Include="Documents\e-KVP sistem - pdf.pdf" />
+    <Content Include="Documents\kaj_je_in_kaj_ni_KVP.pdf" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\KVPDeploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\KVPArchive.aspx.cs">
+      <DependentUpon>KVPArchive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\KVPArchive.aspx.designer.cs">
+      <DependentUpon>KVPArchive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CodeList\KVPType\KVPType.aspx.cs">
+      <DependentUpon>KVPType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeList\KVPType\KVPType.aspx.designer.cs">
+      <DependentUpon>KVPType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CodeList\KVPType\KVPType_popup.aspx.cs">
+      <DependentUpon>KVPType_popup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeList\KVPType\KVPType_popup.aspx.designer.cs">
+      <DependentUpon>KVPType_popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CodeList\Line\Line.aspx.cs">
+      <DependentUpon>Line.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeList\Line\Line.aspx.designer.cs">
+      <DependentUpon>Line.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CodeList\Line\Line_popup.aspx.cs">
+      <DependentUpon>Line_popup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeList\Line\Line_popup.aspx.designer.cs">
+      <DependentUpon>Line_popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CodeList\Location\Location_popup.aspx.cs">
+      <DependentUpon>Location_popup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeList\Location\Location_popup.aspx.designer.cs">
+      <DependentUpon>Location_popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CodeList\Location\Location.aspx.cs">
+      <DependentUpon>Location.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeList\Location\Location.aspx.designer.cs">
+      <DependentUpon>Location.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CodeList\Machine\Machine.aspx.cs">
+      <DependentUpon>Machine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeList\Machine\Machine.aspx.designer.cs">
+      <DependentUpon>Machine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CodeList\Machine\Machine_popup.aspx.cs">
+      <DependentUpon>Machine_popup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeList\Machine\Machine_popup.aspx.designer.cs">
+      <DependentUpon>Machine_popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonMethods.cs" />
+    <Compile Include="Common\EmployeeCredentialsException.cs" />
+    <Compile Include="Common\Enums.cs" />
+    <Compile Include="CompanySettings\CompanySettingsForm.aspx.cs">
+      <DependentUpon>CompanySettingsForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanySettings\CompanySettingsForm.aspx.designer.cs">
+      <DependentUpon>CompanySettingsForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\Department.aspx.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\Department.aspx.designer.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\Department_popup.aspx.cs">
+      <DependentUpon>Department_popup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\Department_popup.aspx.designer.cs">
+      <DependentUpon>Department_popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\Abstract\IActiveUserRepository.cs" />
+    <Compile Include="Domain\Abstract\ICompanySettingsRepository.cs" />
+    <Compile Include="Domain\Abstract\IDepartmentRepository.cs" />
+    <Compile Include="Domain\Abstract\IEmployeeRepository.cs" />
+    <Compile Include="Domain\Abstract\IKodeksToEKVPRepository.cs" />
+    <Compile Include="Domain\Abstract\IKVPAuditorRepository.cs" />
+    <Compile Include="Domain\Abstract\IKVPDocumentRepository.cs" />
+    <Compile Include="Domain\Abstract\IKVPGroupsRepository.cs" />
+    <Compile Include="Domain\Abstract\IKVPStatusRepository.cs" />
+    <Compile Include="Domain\Abstract\IKVPTypeRepository.cs" />
+    <Compile Include="Domain\Abstract\ILineRepository.cs" />
+    <Compile Include="Domain\Abstract\ILocationRepository.cs" />
+    <Compile Include="Domain\Abstract\IMachineRepository.cs" />
+    <Compile Include="Domain\Abstract\IMessageProcessorRepository.cs" />
+    <Compile Include="Domain\Abstract\IMessageSenderRepository.cs" />
+    <Compile Include="Domain\Abstract\IPayoutsRepository.cs" />
+    <Compile Include="Domain\Abstract\IPlaningAndRealizationRepository.cs" />
+    <Compile Include="Domain\Abstract\IPostRepository.cs" />
+    <Compile Include="Domain\Abstract\IRoleRepository.cs" />
+    <Compile Include="Domain\Abstract\IStatusRepository.cs" />
+    <Compile Include="Domain\Abstract\IUserRepository.cs" />
+    <Compile Include="Domain\Concrete\ActiveUserRepository.cs" />
+    <Compile Include="Domain\Concrete\CompanySettingsRepository.cs" />
+    <Compile Include="Domain\Concrete\DepartmentRepository.cs" />
+    <Compile Include="Domain\Concrete\EmployeeRepository.cs" />
+    <Compile Include="Domain\Concrete\KodeksToEKVPRepository.cs" />
+    <Compile Include="Domain\Concrete\KVPAuditorRepository.cs" />
+    <Compile Include="Domain\Concrete\KVPDocumentRepository.cs" />
+    <Compile Include="Domain\Concrete\KVPGroupsRepository.cs" />
+    <Compile Include="Domain\Concrete\KVPStatusRepository.cs" />
+    <Compile Include="Domain\Concrete\KVPTypeRepository.cs" />
+    <Compile Include="Domain\Concrete\LineRepository.cs" />
+    <Compile Include="Domain\Concrete\LocationRepository.cs" />
+    <Compile Include="Domain\Concrete\MachineRepository.cs" />
+    <Compile Include="Domain\Concrete\MessageProcessorRepository.cs" />
+    <Compile Include="Domain\Concrete\MessageSenderRepository.cs" />
+    <Compile Include="Domain\Concrete\PayoutsRepository.cs" />
+    <Compile Include="Domain\Concrete\PlaningAndRealizationRepository.cs" />
+    <Compile Include="Domain\Concrete\PostRepository.cs" />
+    <Compile Include="Domain\Concrete\RoleRepository.cs" />
+    <Compile Include="Domain\Concrete\StatusRepository.cs" />
+    <Compile Include="Domain\Concrete\UserRepository.cs" />
+    <Compile Include="Domain\KVPOdeloCode\ActiveUser.cs" />
+    <Compile Include="Domain\KVPOdeloCode\ActiveUser.Designer.cs">
+      <DependentUpon>ActiveUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\ConnectionHelper.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Departments.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Departments.Designer.cs">
+      <DependentUpon>Departments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\Hierarhija.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Hierarhija.Designer.cs">
+      <DependentUpon>Hierarhija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\Izplacila.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Izplacila.Designer.cs">
+      <DependentUpon>Izplacila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\KVPDocument.cs" />
+    <Compile Include="Domain\KVPOdeloCode\KVPDocument.Designer.cs">
+      <DependentUpon>KVPDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\KVPDocumentArh.cs" />
+    <Compile Include="Domain\KVPOdeloCode\KVPDocumentArh.Designer.cs">
+      <DependentUpon>KVPDocumentArh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\KVPExcell.cs" />
+    <Compile Include="Domain\KVPOdeloCode\KVPExcell.Designer.cs">
+      <DependentUpon>KVPExcell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\KVPExcellDokumenti.cs" />
+    <Compile Include="Domain\KVPOdeloCode\KVPExcellDokumenti.Designer.cs">
+      <DependentUpon>KVPExcellDokumenti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\KVPExellDoc.cs" />
+    <Compile Include="Domain\KVPOdeloCode\KVPExellDoc.Designer.cs">
+      <DependentUpon>KVPExellDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\KVPFullReport.cs" />
+    <Compile Include="Domain\KVPOdeloCode\KVPFullReport.Designer.cs">
+      <DependentUpon>KVPFullReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\KVPGroupReport.cs" />
+    <Compile Include="Domain\KVPOdeloCode\KVPGroupReport.Designer.cs">
+      <DependentUpon>KVPGroupReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\KVPKomentarji.cs" />
+    <Compile Include="Domain\KVPOdeloCode\KVPKomentarji.Designer.cs">
+      <DependentUpon>KVPKomentarji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\KVPPresoje.cs" />
+    <Compile Include="Domain\KVPOdeloCode\KVPPresoje.Designer.cs">
+      <DependentUpon>KVPPresoje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\KVPSkupina.cs" />
+    <Compile Include="Domain\KVPOdeloCode\KVPSkupina.Designer.cs">
+      <DependentUpon>KVPSkupina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\KVPSkupina_Users.cs" />
+    <Compile Include="Domain\KVPOdeloCode\KVPSkupina_Users.Designer.cs">
+      <DependentUpon>KVPSkupina_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\KVPUvoz15_12.cs" />
+    <Compile Include="Domain\KVPOdeloCode\KVPUvoz15_12.Designer.cs">
+      <DependentUpon>KVPUvoz15_12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\KVP_Status.cs" />
+    <Compile Include="Domain\KVPOdeloCode\KVP_Status.Designer.cs">
+      <DependentUpon>KVP_Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\Linija.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Linija.Designer.cs">
+      <DependentUpon>Linija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\Lokacija.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Lokacija.Designer.cs">
+      <DependentUpon>Lokacija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\Nastavitve.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Nastavitve.Designer.cs">
+      <DependentUpon>Nastavitve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\Oddelek.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Oddelek.Designer.cs">
+      <DependentUpon>Oddelek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\PlanRealizacija.cs" />
+    <Compile Include="Domain\KVPOdeloCode\PlanRealizacija.Designer.cs">
+      <DependentUpon>PlanRealizacija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\Prispevek.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Prispevek.Designer.cs">
+      <DependentUpon>Prispevek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\PrispevekKategorija.cs" />
+    <Compile Include="Domain\KVPOdeloCode\PrispevekKategorija.Designer.cs">
+      <DependentUpon>PrispevekKategorija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\Realizacija.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Realizacija.Designer.cs">
+      <DependentUpon>Realizacija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\Status.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Status.Designer.cs">
+      <DependentUpon>Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\StPlan.cs" />
+    <Compile Include="Domain\KVPOdeloCode\StPlan.Designer.cs">
+      <DependentUpon>StPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\Stroj.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Stroj.Designer.cs">
+      <DependentUpon>Stroj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\SystemEmailMessage.cs" />
+    <Compile Include="Domain\KVPOdeloCode\SystemEmailMessage.Designer.cs">
+      <DependentUpon>SystemEmailMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\SystemMessageProcessor.cs" />
+    <Compile Include="Domain\KVPOdeloCode\SystemMessageProcessor.Designer.cs">
+      <DependentUpon>SystemMessageProcessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\Tip.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Tip.Designer.cs">
+      <DependentUpon>Tip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\TipRdeciKarton.cs" />
+    <Compile Include="Domain\KVPOdeloCode\TipRdeciKarton.Designer.cs">
+      <DependentUpon>TipRdeciKarton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\TockeDec2018.cs" />
+    <Compile Include="Domain\KVPOdeloCode\TockeDec2018.Designer.cs">
+      <DependentUpon>TockeDec2018.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\TockePredlagatelj.cs" />
+    <Compile Include="Domain\KVPOdeloCode\TockePredlagatelj.Designer.cs">
+      <DependentUpon>TockePredlagatelj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\TockeRealizator.cs" />
+    <Compile Include="Domain\KVPOdeloCode\TockeRealizator.Designer.cs">
+      <DependentUpon>TockeRealizator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\Users.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\Vloga.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Vloga.Designer.cs">
+      <DependentUpon>Vloga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\Zaposleni.cs" />
+    <Compile Include="Domain\KVPOdeloCode\Zaposleni.Designer.cs">
+      <DependentUpon>Zaposleni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVPOdeloCode\zaposleni_tocke.cs" />
+    <Compile Include="Domain\KVPOdeloCode\zaposleni_tocke.Designer.cs">
+      <DependentUpon>zaposleni_tocke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\Models\DepartmentModel.cs" />
+    <Compile Include="Domain\Models\InfoMailModel.cs" />
+    <Compile Include="Domain\Models\KodeksDepartmentsModel.cs" />
+    <Compile Include="Domain\Models\KodeksUsersModel.cs" />
+    <Compile Include="Domain\Models\KVPEmployee.cs" />
+    <Compile Include="Domain\Models\KVPGroupReportModel.cs" />
+    <Compile Include="Domain\Models\PayoutOverviewByPeriodModel.cs" />
+    <Compile Include="Domain\Models\PayoutOverviewSummary.cs" />
+    <Compile Include="Domain\Models\PostModel.cs" />
+    <Compile Include="Domain\Models\UpdateColumnWithValueModel.cs" />
+    <Compile Include="Domain\Models\UserModel.cs" />
+    <Compile Include="Employees\Employees.aspx.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employees\Employees.aspx.designer.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\EmployeesForm.aspx.cs">
+      <DependentUpon>EmployeesForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employees\EmployeesForm.aspx.designer.cs">
+      <DependentUpon>EmployeesForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\DataProvder\EmployeeProvider.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helpers\DataProvder\KVPDocumentProvider.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helpers\DataProvder\KVPGroupsProvider.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helpers\DataProvder\PostProvider.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helpers\InfrastructureHelper.cs" />
+    <Compile Include="Helpers\MyTypeBuilder.cs" />
+    <Compile Include="Helpers\PrincipalHelper.cs" />
+    <Compile Include="Helpers\QueryStringBuilder.cs" />
+    <Compile Include="Helpers\XpoHelper.cs" />
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\Authentication.cs" />
+    <Compile Include="Infrastructure\ServerMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\UserPrincipal.cs" />
+    <Compile Include="KVPDocuments\FullKVPReport.aspx.cs">
+      <DependentUpon>FullKVPReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KVPDocuments\FullKVPReport.aspx.designer.cs">
+      <DependentUpon>FullKVPReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KVPDocuments\SendInfoMail_popup.aspx.cs">
+      <DependentUpon>SendInfoMail_popup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KVPDocuments\SendInfoMail_popup.aspx.designer.cs">
+      <DependentUpon>SendInfoMail_popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KVPDocuments\KVPAuditor_popup.aspx.cs">
+      <DependentUpon>KVPAuditor_popup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KVPDocuments\KVPAuditor_popup.aspx.designer.cs">
+      <DependentUpon>KVPAuditor_popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KVPDocuments\KVPDocumentRedCardForm.aspx.cs">
+      <DependentUpon>KVPDocumentRedCardForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KVPDocuments\KVPDocumentRedCardForm.aspx.designer.cs">
+      <DependentUpon>KVPDocumentRedCardForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KVPDocuments\KVPDocumentForm.aspx.cs">
+      <DependentUpon>KVPDocumentForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KVPDocuments\KVPDocumentForm.aspx.designer.cs">
+      <DependentUpon>KVPDocumentForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KVPGroups\EmployeesKVPGroups.aspx.cs">
+      <DependentUpon>EmployeesKVPGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KVPGroups\EmployeesKVPGroups.aspx.designer.cs">
+      <DependentUpon>EmployeesKVPGroups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KVPGroups\Employee_popup.aspx.cs">
+      <DependentUpon>Employee_popup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KVPGroups\Employee_popup.aspx.designer.cs">
+      <DependentUpon>Employee_popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KVPGroups\KVPGroupReportForm.aspx.cs">
+      <DependentUpon>KVPGroupReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KVPGroups\KVPGroupReportForm.aspx.designer.cs">
+      <DependentUpon>KVPGroupReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KVPGroups\KVPGroups.aspx.cs">
+      <DependentUpon>KVPGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KVPGroups\KVPGroups.aspx.designer.cs">
+      <DependentUpon>KVPGroups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KVPGroups\KVPGroupsForm.aspx.cs">
+      <DependentUpon>KVPGroupsForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KVPGroups\KVPGroupsForm.aspx.designer.cs">
+      <DependentUpon>KVPGroupsForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\PopUp.Master.cs">
+      <DependentUpon>PopUp.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\PopUp.Master.designer.cs">
+      <DependentUpon>PopUp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\WelcomeSite.Master.cs">
+      <DependentUpon>WelcomeSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\WelcomeSite.Master.designer.cs">
+      <DependentUpon>WelcomeSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Payouts\PayoutOverview.aspx.cs">
+      <DependentUpon>PayoutOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payouts\PayoutOverview.aspx.designer.cs">
+      <DependentUpon>PayoutOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payouts\PayoutOverviewByPeriod.aspx.cs">
+      <DependentUpon>PayoutOverviewByPeriod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payouts\PayoutOverviewByPeriod.aspx.designer.cs">
+      <DependentUpon>PayoutOverviewByPeriod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlaningAndRealization\PlaningAndRealizationOverview.aspx.cs">
+      <DependentUpon>PlaningAndRealizationOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlaningAndRealization\PlaningAndRealizationOverview.aspx.designer.cs">
+      <DependentUpon>PlaningAndRealizationOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Posts\News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Posts\News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Posts\NewsForm.aspx.cs">
+      <DependentUpon>NewsForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Posts\NewsForm.aspx.designer.cs">
+      <DependentUpon>NewsForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\MonthPayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MonthPayout.Designer.cs">
+      <DependentUpon>MonthPayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportPreview.aspx.cs">
+      <DependentUpon>ReportPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPreview.aspx.designer.cs">
+      <DependentUpon>ReportPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AuthenticationValidation_Exception.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuthenticationValidation_Exception.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DB_Exception.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_Exception.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Credentials\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Credentials\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\HandledException.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HandledException.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\NewsPost.ascx.cs">
+      <DependentUpon>NewsPost.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\NewsPost.ascx.designer.cs">
+      <DependentUpon>NewsPost.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\PopUp.ascx.cs">
+      <DependentUpon>PopUp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\PopUp.ascx.designer.cs">
+      <DependentUpon>PopUp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\UploadAttachment.ascx.cs">
+      <DependentUpon>UploadAttachment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\UploadAttachment.ascx.designer.cs">
+      <DependentUpon>UploadAttachment.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Reports\MonthPayout.resx">
+      <DependentUpon>MonthPayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AuthenticationValidation_Exception.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AuthenticationValidation_Exception.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DB_Exception.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DB_Exception.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\HandledException.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>HandledException.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13382</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:13382/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

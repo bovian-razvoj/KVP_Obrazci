@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MainMenu>
+  <SuperAdmin>
+    <Group Text="NADZOR" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/Home.aspx" Text="Domov" ImageUrl="~/Images/home.png" />
+      <Link NavigateUrl="~/Dashboard.aspx" Text="Nadzorna plošča" ImageUrl="~/Images/dashboard.png" />
+    </Group>
+    <Group Text="ZAPOSLENI" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/Employees/Employees.aspx" Text="Zaposleni" ImageUrl="~/Images/employee.png" />
+      <Link NavigateUrl="~/Department/Department.aspx" Text="Oddelki" ImageUrl="~/Images/department_icon.png" />
+      <Link NavigateUrl="~/Employees/EmployeesSync.aspx" Text="Sinhroniziraj" ImageUrl="~/Images/employee.png" />
+    </Group>
+    <Group Text="KVP SKUPINE" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/KVPGroups/KVPGroups.aspx" Text="Urejanje KVP skupin" ImageUrl="~/Images/employeeGroup.png" />
+      <Link NavigateUrl="~/KVPGroups/EmployeesKVPGroups.aspx" Text="Zaposleni in KVP skupine" ImageUrl="~/Images/employeeGroup.png" />
+    </Group>
+    <Group Text="ADMIN" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/Admin/Admin.aspx" Text="Admin" ImageUrl="~/Images/admin.png" />
+      <Link NavigateUrl="~/Admin/KVPArchive.aspx" Text="KVP Arhiv" ImageUrl="~/Images/archive.png" />
+      <Link NavigateUrl="~/Admin/TrackUserLogin.aspx" Text="Aktivnost uporabnikov" ImageUrl="~/Images/userTrack.png" />
+      <Link NavigateUrl="~/Admin/SystemEmailSended.aspx" Text="Sistemska e-pošta" ImageUrl="~/Images/systemEmail.png" />
+    </Group>
+    <Group Text="IZPLAČILA" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/Payouts/PayoutOverview.aspx" Text="Izplačila" ImageUrl="~/Images/admin.png" />
+      <Link NavigateUrl="~/Payouts/PayoutOverviewByPeriod.aspx" Text="Izplačila po obdobju" ImageUrl="~/Images/admin.png" />
+    </Group>
+    <Group Text="PLAN, REALIZACIJA" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/PlaningAndRealization/PlaningAndRealizationOverview.aspx" Text="Pregled" ImageUrl="~/Images/inspect.png" />
+    </Group>
+
+    <Group Text="NASTAVITVE" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/CompanySettings/CompanySettingsForm.aspx" Text="Upravljanje nastavitev" ImageUrl="~/Images/settings.png" />
+    </Group>
+
+    <Group Text="ŠIFRANTI" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/CodeList/KVPType/KVPType.aspx" Text="KVP tipi" ImageUrl="~/Images/codeListKVPType.png" />
+      <Link NavigateUrl="~/CodeList/Location/Location.aspx" Text="Lokacija" ImageUrl="~/Images/locations.png" />
+      <Link NavigateUrl="~/CodeList/Machine/Machine.aspx" Text="Stroj" ImageUrl="~/Images/machine.png" />
+      <Link NavigateUrl="~/CodeList/Line/Line.aspx" Text="Linija" ImageUrl="~/Images/conveyorBelt.png" />
+    </Group>
+
+    <Group Text="PRISPEVKI" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/Posts/News.aspx" Text="Novice" ImageUrl="~/Images/postPin.png" />
+    </Group>
+
+    <Group Text="POROČILA" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/KVPDocuments/FullKVPReport.aspx" Text="KVP poročilo" ImageUrl="~/Images/kvp_report.png" />
+      <Link NavigateUrl="~/KVPGroups/KVPGroupReportForm.aspx" Text="KVP skupine poročilo" ImageUrl="~/Images/groupReport.png" />
+    </Group>
+  </SuperAdmin>
+
+  <Admin>
+    <Group Text="NADZOR" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/Home.aspx" Text="Domov" ImageUrl="~/Images/home.png" />
+      <Link NavigateUrl="~/Dashboard.aspx" Text="Nadzorna plošča" ImageUrl="~/Images/dashboard.png" />
+    </Group>
+    <Group Text="ZAPOSLENI" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/Employees/Employees.aspx" Text="Urejanje zaposlenih" ImageUrl="~/Images/employee.png" />
+      <Link NavigateUrl="~/Department/Department.aspx" Text="Urejanje Oddelkov" ImageUrl="~/Images/department_icon.png" />
+      <Link NavigateUrl="~/Employees/EmployeesSync.aspx" Text="Sinhroniziraj" ImageUrl="~/Images/employee.png" />
+    </Group>
+    <Group Text="KVP SKUPINE" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/KVPGroups/KVPGroups.aspx" Text="Urejanje KVP skupin" ImageUrl="~/Images/employeeGroup.png" />
+      <Link NavigateUrl="~/KVPGroups/EmployeesKVPGroups.aspx" Text="Zaposleni in KVP skupine" ImageUrl="~/Images/employeeGroup.png" />
+    </Group>
+    <Group Text="ADMIN" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">      
+      <Link NavigateUrl="~/Admin/KVPArchive.aspx" Text="KVP Arhiv" ImageUrl="~/Images/archive.png" />
+      <Link NavigateUrl="~/Admin/SystemEmailSended.aspx" Text="Sistemska e-pošta" ImageUrl="~/Images/systemEmail.png" />
+    </Group>
+    <Group Text="IZPLAČILA" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/Payouts/PayoutOverview.aspx" Text="Izplačila" ImageUrl="~/Images/admin.png" />
+      <Link NavigateUrl="~/Payouts/PayoutOverviewByPeriod.aspx" Text="Izplačila po obdobju" ImageUrl="~/Images/admin.png" />
+    </Group>
+    <Group Text="PLAN, REALIZACIJA" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/PlaningAndRealization/PlaningAndRealizationOverview.aspx" Text="Pregled" ImageUrl="~/Images/inspect.png" />
+    </Group>
+
+    <Group Text="NASTAVITVE" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/CompanySettings/CompanySettingsForm.aspx" Text="Upravljanje nastavitev" ImageUrl="~/Images/settings.png" />
+    </Group>
+
+    <Group Text="ŠIFRANTI" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/CodeList/KVPType/KVPType.aspx" Text="KVP tipi" ImageUrl="~/Images/codeListKVPType.png" />
+      <Link NavigateUrl="~/CodeList/Location/Location.aspx" Text="Lokacija" ImageUrl="~/Images/locations.png" />
+      <Link NavigateUrl="~/CodeList/Machine/Machine.aspx" Text="Stroj" ImageUrl="~/Images/machine.png" />
+      <Link NavigateUrl="~/CodeList/Line/Line.aspx" Text="Linija" ImageUrl="~/Images/conveyorBelt.png" />
+    </Group>
+
+    <Group Text="PRISPEVKI" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/Posts/News.aspx" Text="Novice" ImageUrl="~/Images/postPin.png" />
+    </Group>
+
+    <Group Text="POROČILA" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+     <Link NavigateUrl="~/KVPDocuments/FullKVPReport.aspx" Text="KVP poročilo" ImageUrl="~/Images/kvp_report.png" />
+      <Link NavigateUrl="~/KVPGroups/KVPGroupReportForm.aspx" Text="KVP skupine poročilo" ImageUrl="~/Images/groupReport.png" />
+      <Link NavigateUrl="~/Admin/SystemEmailSended.aspx" Text="Sistemska e-pošta" ImageUrl="~/Images/systemEmail.png" />
+    </Group>
+  </Admin>
+
+  <Champion>
+    <Group Text="NADZOR" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/Home.aspx" Text="Domov" ImageUrl="~/Images/home.png" />
+      <Link NavigateUrl="~/Dashboard.aspx" Text="Nadzorna plošča" ImageUrl="~/Images/dashboard.png" />
+    </Group>
+    
+    <Group Text="KVP SKUPINE" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/KVPGroups/KVPGroups.aspx" Text="Pregled KVP skupin" ImageUrl="~/Images/employeeGroup.png" />
+    </Group>
+    <Group Text="PLAN, REALIZACIJA" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/PlaningAndRealization/PlaningAndRealizationOverview.aspx" Text="Pregled" ImageUrl="~/Images/inspect.png" />
+    </Group>
+
+    <Group Text="ARHIV" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/Admin/KVPArchive.aspx" Text="KVP Arhiv" ImageUrl="~/Images/archive.png" />
+    </Group>
+
+    <Group Text="POROČILA" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">      
+      <Link NavigateUrl="~/KVPGroups/KVPGroupReportForm.aspx" Text="KVP skupine poročilo" ImageUrl="~/Images/groupReport.png" />
+    </Group>
+  </Champion>
+
+  <Employee>
+    <Group Text="NADZOR" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/Home.aspx" Text="Domov" ImageUrl="~/Images/home.png" />
+      <Link NavigateUrl="~/Dashboard.aspx" Text="Nadzorna plošča" ImageUrl="~/Images/dashboard.png" />
+    </Group>
+  </Employee>
+
+  <Leader>
+    <Group Text="NADZOR" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/Home.aspx" Text="Domov" />
+      <Link NavigateUrl="~/Dashboard.aspx" Text="Nadzorna plošča" ImageUrl="~/Images/dashboard.png" />
+    </Group>
+    
+    <Group Text="PLAN, REALIZACIJA" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/PlaningAndRealization/PlaningAndRealizationOverview.aspx" Text="Pregled" ImageUrl="~/Images/inspect.png" />
+    </Group>
+  </Leader>
+
+  <TpmAdmin>
+    <Group Text="NADZOR" font="bold" align="center" ImageUrl="~/Images/Arrow-right.png">
+      <Link NavigateUrl="~/Home.aspx" Text="Domov" />
+    </Group>
+  </TpmAdmin>
+</MainMenu>

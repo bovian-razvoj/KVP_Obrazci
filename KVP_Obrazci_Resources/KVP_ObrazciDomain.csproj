@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4AB103E9-7DBE-490B-9EA6-130907145211}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KVP_Obrazci_Resources</RootNamespace>
+    <AssemblyName>KVP_Obrazci_Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Content Include="Domain\KVP_Obrazci.xpo" />
+    <Content Include="Domain\KVP_Obrazci.xpo.diagram">
+      <DependentUpon>KVP_Obrazci.xpo</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\Abstract\IUserRepository.cs" />
+    <Compile Include="Domain\Concrete\UserRepository.cs" />
+    <Compile Include="Domain\KVP_ObrazciCode\ConnectionHelper.cs" />
+    <Compile Include="Domain\KVP_ObrazciCode\Osebe_OTP.cs" />
+    <Compile Include="Domain\KVP_ObrazciCode\Osebe_OTP.Designer.cs">
+      <DependentUpon>Osebe_OTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVP_ObrazciCode\StrankaZaposleni_OTP.cs" />
+    <Compile Include="Domain\KVP_ObrazciCode\StrankaZaposleni_OTP.Designer.cs">
+      <DependentUpon>StrankaZaposleni_OTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVP_ObrazciCode\TipStranka.cs" />
+    <Compile Include="Domain\KVP_ObrazciCode\TipStranka.Designer.cs">
+      <DependentUpon>TipStranka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\KVP_ObrazciCode\Vloga_OTP.cs" />
+    <Compile Include="Domain\KVP_ObrazciCode\Vloga_OTP.Designer.cs">
+      <DependentUpon>Vloga_OTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\XpoHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\Models\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PopUp.master.cs" Inherits="KVP_Obrazci.MasterPages.PopUp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <%--<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--%>
+
+    <link href="../Files/icon.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../Files/bootstrap.min.css" />
+    <link rel="stylesheet" href="../Files/font-awesome.min.css" />
+    <script src="../Files/jquery.min.js" type="text/javascript"></script>
+    <script src="../Files/bootstrap.min.js" type="text/javascript"></script>
+
+     <link rel="stylesheet" href="../Style/BootstrapCustom.css" />
+    <link rel="stylesheet" href="../Style/Content.css" />
+    <link rel="stylesheet" href="../Style/Common.css" />
+    <link rel="stylesheet" href="../Style/UserControls.css" />
+    <link rel="stylesheet" href="../Style/DevExpressCustom.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding-bottom:0;">
+    <script src='<%= ResolveUrl("~/Scripts/CommonJS.js") %>'></script>
+    <form id="form1" runat="server">
+        <div class="container-fluid">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

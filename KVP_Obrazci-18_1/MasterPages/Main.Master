@@ -1,0 +1,199 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="KVP_Obrazci.MasterPages.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+    <%--<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />--%>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="../Style/jquery.roadmap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../Style/BootstrapCustom.css" />
+    <link rel="stylesheet" href="../Style/Content.css" />
+    <link rel="stylesheet" href="../Style/Common.css" />
+    <link rel="stylesheet" href="../Style/UserControls.css" />
+    <link rel="stylesheet" href="../Style/DevExpressCustom.css" />
+
+    <%--<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous">
+    </script>--%>
+
+    <script type="text/javascript">
+
+        $(document).mouseup(function (e) {
+           
+            ExpandCollapsePanelOutsideClick(e, $('#ctl00_ASPxPanelMenu_EB'), clientASPxPanelMenu);
+            ShowRemoveDropdownOutsideClick(e, $('.logo'), $('#myDropDown'));
+        });
+
+        function ExpandCollapsePanelOutsideClick(eventArg, container, panel) {
+
+            if (panel.IsExpanded()) {
+                // if the target of the click isn't the container nor a descendant of the container
+                if ((!container.is(eventArg.target) && container.has(eventArg.target).length === 0)) {
+                    panel.Collapse();
+                }
+            }
+        };
+
+        function OpenDropDown() {
+            document.getElementById("myDropDown").classList.toggle("show");
+        };
+
+        $(document).ready(function () {
+           
+            setInterval(function () {
+                var redirect = false;
+                var cookieValue = getCookie("UserLastRequest");//preberemo iz cookija kdaj je bil zadnji request narejen
+                var sessionExpres = parseInt(getCookie("SessionExpires"));//preberemo iz cookija koliko časa je dovoljena odprta seja za prijavo
+
+                if(cookieValue == "STOP")
+                    return;
+
+                if (isNaN(sessionExpres))
+                    sessionExpres = 30;
+
+                var split = cookieValue.split(" ");
+                var lastRequestDate = new Date(parseInt(split[2]), parseInt(split[1]) - 1, parseInt(split[0]), parseInt(split[3]), parseInt(split[4]), parseInt(split[5]));
+
+                var newDate = addMinutes(lastRequestDate, sessionExpres);
+
+                var currentDate = new Date();
+
+                if (currentDate.getTime() > newDate.getTime())
+                    window.location.replace(location.origin + "/Home.aspx");
+
+            }, 30000);//30 sec
+        });
+
+        function addMinutes(date, minutes)
+        {
+            return new Date(date.getTime() + minutes * 60000);
+        }
+    </script>
+    
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: #ECF0F5;">
+    <script src='<%= ResolveUrl("~/Scripts/CommonJS.js") %>'></script>
+    <script src='<%= ResolveUrl("~/Scripts/jquery.roadmap.min.js") %>'></script>
+    <div>
+        <form id="form1" runat="server"  style="padding-bottom: 60px;">
+            <header class="container-fluid main-header" style="background-color: #3C8DBC;">
+            <div class="row2">
+                <div class="col-sm-2 align-item-centerV-startH" style="text-align: left; padding:10px;">
+                    <div class="row2 full-width">
+                        <div class="col-xs-2 no-padding-left">
+                            <div class="dropdown text-left">
+                                <div class="logo dropbtn" onclick="OpenDropDown()">
+                                    <img id="headerProfileImage" runat="server" src="/Images/defaultPerson.png" alt="No profile logo" class="img-circle hoverProfileImage" height="50" width="50" title="Your profile" />
+                                    <div id="myDropDown" class="dropdown-content">
+                                        <div>
+                                            <dx:ASPxLabel ID="SignedInAsLabel" runat="server" Text="Moja vloga: " Font-Size="14px" />
+                                            <dx:ASPxLabel ID="UserRoleLabel" runat="server" Text="" Font-Size="14px" />
+                                        </div>
+                                        <div>
+                                            <dx:ASPxLabel ID="lblAppVersion" runat="server" Text="" Font-Size="14px" />
+                                        </div>
+                                        <div>
+                                            <a href="#" class="what-is-new-dropdown">Kaj je novega?</a>
+                                        </div>
+                                        <div>
+                                            <dx:ASPxButton ID="btnChangePassword" runat="server" Text="Sprememba gesla" HorizontalAlign="Left" RenderMode="Link" CssClass="what-is-new-dropdown"
+                                                AutoPostBack="false" UseSubmitBehavior="false" OnClick="btnChangePassword_Click"></dx:ASPxButton>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-10 no-padding-left text-left">
+                            <a href="/Home.aspx" style="display: block; text-decoration: none; padding-left: 12px; padding-top:5px;">
+                                <span style="display: block;">
+                                    <dx:ASPxLabel ID="SignedInHelloLabel" runat="server" Text="Pozdravljeni," Font-Size="Smaller" ForeColor="#ECF0F5" meta:resourcekey="SignedInHelloLabelResource1">
+                                    </dx:ASPxLabel>
+                                </span>
+                                <span style="display: block;">
+                                    <dx:ASPxLabel runat="server" ID="lblLogin" Font-Bold="true" ForeColor="#ECF0F5" />
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9 logo-container" style="text-align: center; padding: 5px; justify-content:center; align-items:center">
+                    <a href ="/Home.aspx"><img src="/Images/Logo's/Logo_Odelo.png" width="120" /></a>
+                </div>
+                <div class="col-sm-1 login-container" style="align-items: flex-end; justify-content:center;">
+                    <dx:ASPxButton ID="btnSignOut" runat="server" RenderMode="Link" UseSubmitBehavior="false" AutoPostBack="false"
+                        OnClick="btnSignOut_Click">
+                        <Image Url="../Images/lock.png" Width="24"/>
+                    </dx:ASPxButton>
+                </div>
+            </div>
+        </header>
+            <section class="container-fluid">
+            <div class="row2">
+                <div class="col-xs-12">
+                    <dx:ASPxPanel ID="ASPxPanelMenu" Width="270px" runat="server" FixedPosition="WindowLeft" FixedPositionOverlap="true" Collapsible="true"
+                     BackColor="#f5f5f5" ScrollBars="Auto" ClientInstanceName="clientASPxPanelMenu">
+                        <SettingsAdaptivity CollapseAtWindowInnerWidth="0" />
+                        <Images>
+                            <ExpandButtonArrowRight Width="37px" Height="37px" >
+                            </ExpandButtonArrowRight>
+                        </Images>
+                        <Styles>
+                            <ExpandBar BackColor="#2A2A2A"  Width="42px">                        
+                            </ExpandBar>
+                            <ExpandedExpandBar BackColor="#2A2A2A">
+                            </ExpandedExpandBar>
+                            <ExpandButton BackColor="#1279c0">
+                            </ExpandButton>
+                                
+                        </Styles>
+                        <SettingsCollapsing ExpandEffect="Slide">
+                            <ExpandButton GlyphType="Strips" Position="Far" />
+                        </SettingsCollapsing>
+                        <Paddings Padding="0px" />
+                        <PanelCollection>
+                            <dx:PanelContent>
+                                <asp:XmlDataSource ID="XmlMenuDataSource" runat="server" DataFile="~/Navigation/Menu.xml"></asp:XmlDataSource>
+                                <dx:ASPxNavBar ID="NavBarMainMenu" runat="server" DataSourceID="XmlMenuDataSource" Theme="iOS" AutoCollapse="false" EncodeHtml="False" AllowSelectItem="True" 
+                                    EnableAnimation="true" Width="100%" BackColor="#f4f5f7"
+                                    EnableHotTrack="true" ShowGroupHeaders="true">
+                                    <ItemTextTemplate>
+                                        <dx:ASPxLabel ID="lblModel" runat="server" Font-Bold="True" Text='<%# Container.EvalDataItem("Text") %>' />
+                                    </ItemTextTemplate>
+                                </dx:ASPxNavBar>
+                            </dx:PanelContent>
+                        </PanelCollection>
+                    </dx:ASPxPanel>
+                </div>
+            </div>
+        </section>
+            <div class="container-fluid">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+        <footer style="padding: 1rem; background-color: #fff; position: absolute; bottom: 0; right:0; left:0; text-align: center; width: 100%;">
+            Copyright © 2018 <span style="color: #3C8DBC">Odelo Slovenija</span>
+        </footer>
+    </div>
+</body>
+</html>

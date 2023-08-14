@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WelcomeSite.master.cs" Inherits="KVP_Obrazci.MasterPages.WelcomeSite" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../Style/BootstrapCustom.css" />
+    <link rel="stylesheet" href="../Style/Content.css" />
+    <link rel="stylesheet" href="../Style/Common.css" />
+    <link rel="stylesheet" href="../Style/DevExpressCustom.css" />
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<%-- body.main {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    
+} --%>
+<body style="background-color: #ECF0F5; min-height: 100%; padding-bottom: 6rem;">
+    <script src='<%= ResolveUrl("~/Scripts/CommonJS.js") %>'></script>
+    <form id="form1" runat="server">
+        <header class="container-fluid main-header" style="background-color: #3C8DBC;">
+            <div class="row2">
+                <div class="col-sm-11 logo-container" style="text-align: center; padding: 5px;">
+                    <a href ="../Home.aspx"><img src="../Images/Logo's/Logo_Odelo.png" width="120" /></a></div>
+                <div class="col-sm-1 login-container align-item-centerV-centerH">
+                    <img src="../Images/lock.png" width="24" />
+                </div>
+            </div>
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer style="padding: 10px 5px; background-color: #fff; position: absolute; right: 0; bottom: 0; left: 0; text-align: center;">
+            Copyright © 2018 <span style="color: #3C8DBC">Odelo Slovenija</span>
+        </footer>
+    </form>
+</body>
+</html>

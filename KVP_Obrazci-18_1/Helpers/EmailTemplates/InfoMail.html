@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .passBtn a:hover {
+            background-color: #fff !important;
+            cursor: pointer;
+            border: 2px solid #29B178 !important;
+            color: #29B178 !important;
+            border-radius: 6px;
+        }
+
+        .passBtn a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div style="margin: 0 auto; width: 80%;">
+            <table width="100%" style="border-collapse:collapse;">
+                <tr style="background-color: #3C8DBC; border-bottom: 1px solid #C0C0C0">
+                    <td>
+                        <img style=" margin-left: 10px;" src="$%ServerTag%$/Images/Logo's/Logo_Odelo.png" width="140">
+                    </td>
+                </tr>
+                <tr style="background-color: #F8F8F8; ">
+                    <td>
+                        <div style="margin:0 auto; width:80%">
+                            <table width="100%" style="border-collapse:collapse;">
+                                <tr>
+                                    <td>
+                                        <h3 style="margin-bottom:5px;">Pozdravljeni,  $%FirstName%$ $%Lastname%$!</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4 style="margin-top:5px; margin-bottom:0;">Oseba $%SenderFirstName%$ $%SenderLastname%$, vam pošilja zaznamke v zvezi z KVP-jem številka $%StevilkaKVP%$</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4 style="margin-top:20px; margin-bottom:0;">Z vsebino:</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="padding-left:20px; margin-top:0;">$%Notes%$</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="margin: 0 auto; width:90%">
+                                            <div class="passBtn" style="width: 70%; background-color: #29B178; font-weight: 600; border-radius: 6px; margin: inherit; text-align: center; letter-spacing: 1px; ">
+                                                <a href="$%ServerTag%$" style="display: block; color: #fff; padding: 10px 15px; border: 2px solid #29B178; border-radius: 6px; ">
+                                                    Prijavi se
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Lep pozdrav <br /> $%SenderFirstName%$ $%SenderLastname%$</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="background-color: #3C8DBC; color:#fff">
+                    <td>
+                        <div style="margin-top: 10px; text-align: center; font-size: 11px">
+                            © 2019 Spletna splikacija KVP. Vsebina sporočila je zaupna. Sporočilo je bilo poslano na naslov <a href="mailto:$%Email%$" target="_blank">$%Email%$</a>. Če je sporočilo zgrešilo naslovnika, nam to sporočite na <a href="mailto:info@bovianplus.si" target="_blank">info@bovianplus.si</a>.
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

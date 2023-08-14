@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KVP_Obrazci", "KVP_Obrazci\KVP_Obrazci.csproj", "{CE368872-8EFD-488D-A48A-FBD16D6D75C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KVPMessageProcessorService", "KVPMessageProcessorService\KVPMessageProcessorService.csproj", "{CF7E4E2D-38F1-4DDB-868E-831F462BFC47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageSenderService", "MessageSenderService\MessageSenderService.csproj", "{AFA27080-9A12-49B8-B567-ED0ADA741DB4}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.bovianplus.si/tfs/tfscollection
+		SccProjectUniqueName0 = KVP_Obrazci\\KVP_Obrazci.csproj
+		SccProjectName0 = KVP_Obrazci
+		SccAuxPath0 = http://tfs.bovianplus.si/tfs/tfscollection
+		SccLocalPath0 = KVP_Obrazci
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = MessageSenderService\\MessageSenderService.csproj
+		SccProjectName1 = MessageSenderService
+		SccAuxPath1 = http://tfs.bovianplus.si/tfs/tfscollection
+		SccLocalPath1 = MessageSenderService
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = MessageProcessorService\\KVPMessageProcessorService.csproj
+		SccProjectName2 = MessageProcessorService
+		SccAuxPath2 = http://tfs.bovianplus.si/tfs/tfscollection
+		SccLocalPath2 = MessageProcessorService
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE368872-8EFD-488D-A48A-FBD16D6D75C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE368872-8EFD-488D-A48A-FBD16D6D75C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE368872-8EFD-488D-A48A-FBD16D6D75C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE368872-8EFD-488D-A48A-FBD16D6D75C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF7E4E2D-38F1-4DDB-868E-831F462BFC47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF7E4E2D-38F1-4DDB-868E-831F462BFC47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF7E4E2D-38F1-4DDB-868E-831F462BFC47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF7E4E2D-38F1-4DDB-868E-831F462BFC47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA27080-9A12-49B8-B567-ED0ADA741DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA27080-9A12-49B8-B567-ED0ADA741DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA27080-9A12-49B8-B567-ED0ADA741DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA27080-9A12-49B8-B567-ED0ADA741DB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

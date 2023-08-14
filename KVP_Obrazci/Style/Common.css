@@ -1,0 +1,143 @@
+﻿.show {
+    display: block;
+}
+/*********** PADDINGS ************/
+
+.no-padding {
+    padding: 0;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+.small-padding-top {
+    padding-top:10px;
+}
+.small-padding-bottom {
+    padding-bottom: 10px;
+}
+.medium-padding-top {
+    padding-top:20px;
+}
+.medium-padding-bottom {
+    padding-bottom: 20px;
+}
+.large-padding-top {
+    padding-top:30px;
+}
+.large-padding-bottom {
+    padding-bottom: 30px;
+}
+.small-paddings {
+    padding:15px;
+}
+.medium-paddings {
+    padding:15px;
+}
+
+
+.align-content-center {
+    justify-content:center;
+    align-items:center;
+}
+.align-content-right {
+    justify-content:center;
+    align-items:flex-end;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.small-margin-t {
+    margin-top: 5px;
+}
+.small-margin-b {
+    margin-bottom: 5px;
+}
+
+.small-margin-r {
+    margin-right: 5px;
+}
+.small-margin-l {
+    margin-left: 5px;
+}
+
+.medium-margin-r {
+    margin-right: 10px;
+}
+.medium-margin-l {
+    margin-left: 10px;
+}
+
+.big-margin-r {
+    margin-right: 15px;
+}
+.big-margin-l {
+    margin-left: 15px;
+}
+
+.big-margin-b {
+    margin-bottom: 15px;
+}
+
+.no-margin {
+    margin:0;
+}
+.no-margin-b {
+    margin-bottom:0;
+}
+
+.align-item-centerV-centerH {
+    align-items: center;
+    justify-content: center;
+}
+.align-item-centerV-startH {
+    align-items: center;
+    justify-content: flex-start;
+}
+.align-item-centerV-endH {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border: 1px solid #e1e1e1 !important;
+  width: 50%;
+  margin-top:0 !important;
+}
+
+/************OVERFLOW****************/
+
+.horizontal-scroll {
+    padding: 0;
+    overflow-x: auto;
+}
+
+.no-background-image {
+    background-image: none;
+}
+
+.icon-disabled {
+    opacity: 0.4;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.icon-hover {
+    -webkit-filter: grayscale(100%) !important;
+    filter: grayscale(100%) !important;
+}
+
+.text-decor {
+    text-decoration: none !important;
+}

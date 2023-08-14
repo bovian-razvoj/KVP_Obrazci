@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="6db9a001-3cd0-44a9-967c-71caa09456cd" dbName="GrafolitOTP" connectionInfo="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxEZXZFeHByZXNzWHBvR2VuZXJhdG9yU2V0dGluZ3MgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgcHJvdmlkZXJLZXk9Ik1TU3FsU2VydmVyIj4NCiAgPHBhcmFtZXRlcj4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0ic2VydmVyIiB2YWx1ZT0iMTAuMTAuMTAuMTAiIC8+DQogICAgPENvbm5lY3Rpb25QYWdlU2V0dGluZ3NJdGVtIG5hbWU9ImRhdGFiYXNlIiB2YWx1ZT0iR3JhZm9saXRPVFAiIC8+DQogICAgPENvbm5lY3Rpb25QYWdlU2V0dGluZ3NJdGVtIG5hbWU9InVzZUludGVncmF0ZWRTZWN1cml0eSIgdmFsdWU9IkZhbHNlIiAvPg0KICAgIDxDb25uZWN0aW9uUGFnZVNldHRpbmdzSXRlbSBuYW1lPSJ1c2VyaWQiIHZhbHVlPSJtYXJ0aW5wIiAvPg0KICAgIDxDb25uZWN0aW9uUGFnZVNldHRpbmdzSXRlbSBuYW1lPSJwYXNzd29yZCIgdmFsdWU9Im0xMjMuIiAvPg0KICAgIDxDb25uZWN0aW9uUGFnZVNldHRpbmdzSXRlbSBuYW1lPSJyZWFkIG9ubHkiIHZhbHVlPSIxIiAvPg0KICAgIDxDb25uZWN0aW9uUGFnZVNldHRpbmdzSXRlbSBuYW1lPSJnZW5lcmF0ZUNvbm5lY3Rpb25IZWxwZXIiIHZhbHVlPSJ0cnVlIiAvPg0KICA8L3BhcmFtZXRlcj4NCjwvRGV2RXhwcmVzc1hwb0dlbmVyYXRvclNldHRpbmdzPg==" namespace="KVP_Obrazci.Domain.GrafolitOTP" connectionString="XpoProvider=MSSqlServer;data source=10.10.10.10;user id=martinp;password=m123.;initial catalog=GrafolitOTP;Persist Security Info=true" dataBaseShemaInfo="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" generateConnectionHelper="true" generateStoredProcedures="false" fieldNameCase="Unchanged" generateDefaultConstructors="false" generateClassesForViews="true" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+  <comments>
+    <dataBaseObjectModelHasComments Id="1bbecf41-d21b-48a5-9296-749a11722894">
+      <comment Id="8fdb31f6-9143-4836-935d-9d83d341b886" text="The 'PK__Fakturis__osebe' index is ignored, because 'idOsebe' is a key" name="Osebe_OTPComment">
+        <subjects>
+          <commentReferencesSubjects Id="b58b6bdd-a2f0-4192-a92a-cc4de69e0975">
+            <xpObjectMoniker Id="37fa20d7-bee5-471a-94b6-21a7078e526d" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="6815d4c7-a42e-419f-8295-5ebf2c1b4808">
+      <comment Id="820dd7c3-d5c0-44df-8e6e-7c81d1d80b8e" text="The 'PK_STRANKAZAPOSLENI' index is ignored, because 'idStrankaOsebe' is a key" name="StrankaZaposleni_OTPComment">
+        <subjects>
+          <commentReferencesSubjects Id="5aad084b-b074-490c-ada4-f251c7b16706">
+            <xpObjectMoniker Id="e0d727ea-4cfb-4d7a-b0f8-4f4c5b46c51f" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="b83db395-e647-49a6-b623-911886b38ebe">
+      <comment Id="768831ef-4a66-4fa1-9e51-0edf0fed28a9" text="The 'PK_TipStranka' index is ignored, because 'TipStrankaID' is a key" name="TipStrankaComment">
+        <subjects>
+          <commentReferencesSubjects Id="ec959366-d4e8-470a-b4f4-485a176398e3">
+            <xpObjectMoniker Id="269d8ba0-ddff-48f6-a9bd-7523ef086adb" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="1547e5c0-9d26-444e-9d7b-4184bc633fb3">
+      <comment Id="1fca1d04-c6fc-47a3-9cfd-e9c71ffeef78" text="The 'PK_VLOGA' index is ignored, because 'idVloga' is a key" name="Vloga_OTPComment">
+        <subjects>
+          <commentReferencesSubjects Id="07d19f5b-333a-4497-ba32-98ba607db3b2">
+            <xpObjectMoniker Id="91ae9a06-58b0-41e6-8f46-d8af5916ea97" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+  </comments>
+  <classes>
+    <dataBaseObjectModelHasClasses Id="35a401b6-d924-4965-b0a8-1ff13d06b2dc">
+      <xpObject Id="37fa20d7-bee5-471a-94b6-21a7078e526d" name="Osebe_OTP" baseClass="XPLiteObject" userFileName="Osebe_OTP" designerFileName="Osebe_OTP.Designer" className="Osebe_OTP" virtualBaseClass="XPLiteObject" persistent="Osebe_OTP" virtualName="Osebe_OTP">
+        <fields>
+          <generalXpObjectHasFields Id="a710ea0c-162e-4aa2-b9c3-e24314c982f7">
+            <field Id="3bef675a-c0bb-4ded-9a69-901cdc65ecb0" name="idOsebe" columnType="Int32" key="true" isIdentity="true" persistent="idOsebe" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="681d86d0-70d8-41a2-a553-95d6f48d1086">
+            <field Id="070d0398-8c27-4fa0-af5b-a6df1ca7814c" name="idVloga" columnType="Int32" persistent="idVloga" virtualColumnType="Vloga_OTP" logicalType="Vloga_OTP" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="310b0c6a-ba20-4777-a1b4-015ffa215773">
+            <field Id="d1aaacf4-c405-4189-9aca-47c068d0e49d" name="Ime" persistent="Ime" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="60" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="94c129d1-aaa4-40fe-ad05-b812fb6db4c4">
+            <field Id="bd3a5766-a1a4-41ac-8cdf-2e1b6c0d3a4f" name="Priimek" persistent="Priimek" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="60" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="8bcca774-a258-4770-ae77-b7b23a479635">
+            <field Id="3710de36-516b-4275-83c7-608e3b8497be" name="Naslov" persistent="Naslov" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="160" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="491cc84b-f881-4859-b842-b7804cabd9be">
+            <field Id="b77d01e6-fc94-44c2-a312-b79d7b82080a" name="DatumRojstva" columnType="DateTime" persistent="DatumRojstva" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="77dd8d4a-33ae-4d77-b6fe-b504b243f4bf">
+            <field Id="21813559-2bd1-4c56-ba77-372504c3de42" name="Email" persistent="Email" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="200" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="179d9861-c081-4e9c-884e-b636eba855a2">
+            <field Id="75144375-bb77-48b6-9498-b9e19c151586" name="DatumZaposlitve" columnType="DateTime" persistent="DatumZaposlitve" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1b76c4f3-196a-4293-99fb-d32e997a7681">
+            <field Id="f58d3a36-bf54-4978-8c3d-e59509be5e7a" name="UporabniskoIme" persistent="UporabniskoIme" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="b6ec41ed-4523-425d-9fa7-9ae54926adfa">
+            <field Id="ffeaffde-bf4d-4299-9759-66e94e58c1d2" name="Geslo" persistent="Geslo" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="dc48b5f3-d072-417a-964b-ef7d67b70397">
+            <field Id="68eba998-d5ef-4db6-909a-60203de96cd4" name="TelefonGSM" persistent="TelefonGSM" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="60" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="cc833302-d672-4d94-8ff1-6c5f3eefade8">
+            <field Id="fab3d8ed-b42d-4f8e-b45d-c556e0aaae2b" name="Zunanji" columnType="Int32" persistent="Zunanji" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="f37c3b6d-c0e2-4b97-86a2-c675898d6d7a">
+            <field Id="94324ec9-e584-44ae-b24d-d680c2574fe7" name="DelovnoMesto" persistent="DelovnoMesto" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="200" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="cc2cf77a-3268-4786-8b36-8f83b6cfb9cd">
+            <field Id="b5c37222-9e42-4f51-aa01-c4edd2bd2c2c" name="ProfileImage" persistent="ProfileImage" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="300" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="b3acb159-2755-4552-8bd9-ff8c6dfc9a53">
+            <field Id="5049aa81-e4b4-4b36-9717-95e59fa8c734" name="ts" columnType="DateTime" persistent="ts" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ca9bad73-6f17-4cb0-bc47-e45bcdaf72f0">
+            <field Id="1af139fe-9ead-4213-a647-0988ab185a5b" name="tsIDOsebe" columnType="Int32" persistent="tsIDOsebe" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="e2d057cb-9a56-4e83-8acf-af8a31f82e0e" sourceCollectionName="StrankaZaposleni_OTPs" name="StrankaZaposleni_OTPReferencesOsebe_OTP" targetFieldName="idOsebe">
+            <xpObjectMoniker Id="e0d727ea-4cfb-4d7a-b0f8-4f4c5b46c51f" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="d01ecabf-386c-48d0-b33d-c767c6cd19ab">
+            <collectionField Id="872917ea-b73f-4602-b3d4-661aa122080e" name="StrankaZaposleni_OTPs" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="1915f896-0553-4ffb-82d1-138ea6a6b437">
+      <xpObject Id="e0d727ea-4cfb-4d7a-b0f8-4f4c5b46c51f" name="StrankaZaposleni_OTP" baseClass="XPLiteObject" userFileName="StrankaZaposleni_OTP" designerFileName="StrankaZaposleni_OTP.Designer" className="StrankaZaposleni_OTP" virtualBaseClass="XPLiteObject" persistent="StrankaZaposleni_OTP" virtualName="StrankaZaposleni_OTP">
+        <fields>
+          <generalXpObjectHasFields Id="05be8acd-0cda-4c8f-a1c1-59173acd1769">
+            <field Id="ab28b7e5-de74-47ac-a389-b905640da0aa" name="idStrankaOsebe" columnType="Int32" key="true" isIdentity="true" persistent="idStrankaOsebe" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4e1c2149-4976-4f62-935a-4a39cf1c16d9">
+            <field Id="43abba1d-e02c-497c-98d1-1e6812ae4241" name="idStranka" columnType="Int32" persistent="idStranka" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="f7e90c6f-07a6-4736-8b92-a80896239652">
+            <field Id="f93a01a3-9ae5-4e01-836b-40b71fd9fef5" name="idOsebe" columnType="Int32" persistent="idOsebe" virtualColumnType="Osebe_OTP" logicalType="Osebe_OTP" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="92f85a79-530d-4a6f-b76b-5e99e4648a7e">
+            <field Id="1834c346-6132-42c2-9a8a-ec331091ea3d" name="ts" columnType="DateTime" persistent="ts" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1dbf8b8c-ab98-4e85-a4f9-98f0c1896d97">
+            <field Id="cefa480b-7a66-4b3e-9390-1fd82f76c802" name="tsIDOsebe" columnType="Int32" persistent="tsIDOsebe" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="75ce7050-3b24-4589-937f-bc96341dd97e">
+      <xpObject Id="269d8ba0-ddff-48f6-a9bd-7523ef086adb" name="TipStranka" baseClass="XPLiteObject" userFileName="TipStranka" designerFileName="TipStranka.Designer" className="TipStranka" virtualBaseClass="XPLiteObject" persistent="TipStranka" virtualName="TipStranka">
+        <fields>
+          <generalXpObjectHasFields Id="c70bc95d-5e46-4a8e-bb8d-ff7eb4195003">
+            <field Id="1f97a346-c5c8-43f8-bd4e-344808d1a02d" name="TipStrankaID" columnType="Int32" key="true" isIdentity="true" persistent="TipStrankaID" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="90a554a1-ec06-4899-95dc-7363f25e57c7">
+            <field Id="e727b2d2-3e47-48d8-b91b-bd3ccb7f2c5b" name="Koda" persistent="Koda" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2a110362-a03c-4252-91ba-57b7fe6d71da">
+            <field Id="0ab261ae-bb60-447c-883d-d2decbc42b5f" name="Naziv" persistent="Naziv" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="dcd077da-4b39-4721-885a-0a50252e5dad">
+            <field Id="401dd218-6a19-4387-a4f1-47271a16e4d2" name="Opis" persistent="Opis" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="250" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="86d09fe9-45c1-4978-b368-42dbb756fb47">
+            <field Id="6b127507-b531-4996-934f-60a5dffe6898" name="tsIDOseba" columnType="Int32" persistent="tsIDOseba" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="71533e08-cd66-4d3f-bb5a-5279c9f01f5c">
+            <field Id="1c4dcf24-82c9-4921-bb7e-4b9c7714f0a2" name="ts" columnType="DateTime" persistent="ts" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="07f6c8ff-40af-441b-a2d8-91fb85228ec4">
+      <xpObject Id="91ae9a06-58b0-41e6-8f46-d8af5916ea97" name="Vloga_OTP" baseClass="XPLiteObject" userFileName="Vloga_OTP" designerFileName="Vloga_OTP.Designer" className="Vloga_OTP" virtualBaseClass="XPLiteObject" persistent="Vloga_OTP" virtualName="Vloga_OTP">
+        <fields>
+          <generalXpObjectHasFields Id="8c496291-fbfa-4070-b215-7f3e855f20c5">
+            <field Id="9276e913-783d-4ad1-91ab-5f923ac89196" name="idVloga" columnType="Int32" key="true" isIdentity="true" persistent="idVloga" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="026a8902-a662-45cf-ba7c-3b18c1aa1f72">
+            <field Id="b64328c2-5092-463f-a5f4-063b2ce31fef" name="Koda" persistent="Koda" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="60" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="9a691f1f-e124-46f4-9162-c2d2ffde9c8d">
+            <field Id="50423b00-fc2b-4fbe-bbdd-75b0d0f492cc" name="Naziv" persistent="Naziv" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="160" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="23eb7735-c184-4a68-9f0d-bcc30c8ac828">
+            <field Id="628c57bc-0a35-41db-b127-456294ff5201" name="ts" columnType="DateTime" persistent="ts" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4cc59849-e2fd-42bb-b7dc-6a72644ae95a">
+            <field Id="d4405e79-0784-4f43-ae04-95782b7453ae" name="tsIDOsebe" columnType="Int32" persistent="tsIDOsebe" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="c605ced5-a994-4ac2-bd3d-5270710b8c37" sourceCollectionName="Osebe_OTPs" name="Osebe_OTPReferencesVloga_OTP" targetFieldName="idVloga">
+            <xpObjectMoniker Id="37fa20d7-bee5-471a-94b6-21a7078e526d" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="60b4a3d8-d7f1-4bfa-8a1d-69066f8b950d">
+            <collectionField Id="8a1f91cf-77b6-48ba-81de-7e02336bc856" name="Osebe_OTPs" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+  </classes>
+</dataBaseObjectModel>
